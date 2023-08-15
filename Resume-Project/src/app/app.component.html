@@ -1,0 +1,266 @@
+<header>
+<div class="bg-dark" id="background-photo">
+<!-- <img src="../assets/coder_photo.jpg" id="background-photo" alt=""> -->
+
+<!-- <nav class="navbar navbar-dark bg-dark fixed-top container"> -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0;">
+  <div class="container-fluid navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Kushal Khanna</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about-section">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+</div>
+</header>
+
+<body>
+
+  <!-- ABOUT ME SECTION -->
+  <div class="container">
+    <div id="about-section">
+      <img id="section-photo" src="../assets/Kushal.png" alt="My Photo">
+
+      <div class="about">
+        <h1 class="dark-heading">About me</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, voluptatum. Illum quas dolorum saepe? Voluptatum, distinctio amet. Sunt deserunt sint, tenetur, saepe voluptatibus mollitia laborum fugit modi a culpa veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ducimus sapiente, fugiat ea nulla labore! Minima, doloribus debitis eius nisi eum necessitatibus eos excepturi officiis quia, rerum atque voluptates temporibus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, sit deserunt quo earum quia nobis maxime sint ipsum sequi, fuga laboriosam dolorum neque magni quis possimus consequatur voluptate. Sit, unde!</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="about-ul">
+              <li class="li" (click)="experienceClick()">Experience</li>
+              <li class="li" (click)="educationClick()">Education</li>
+              <li class="li" (click)="skillsClick()">Certifications</li>
+            </ul>
+          </div>
+          <p class="about-me-info" *ngIf="aboutMe[0]">
+            AddNode India 12/22 - Present <br><br>
+            BirlaSoft Limited 01/21 - 11/22
+          </p>
+          <p class="about-me-info" *ngIf="aboutMe[1]">
+            Bharati Vidyapeeth(DU) College of Engineering, Pune
+          </p>
+          <p class="about-me-info" *ngIf="aboutMe[2]">
+            Modern Javascript <br>
+            Data Structures and Algorithms - Java
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MY SERVICES SECTION -->
+  <div id="services" class="bg-dark" style="margin-top: 4%;">
+    <div class="container">
+      <h1 class="white-heading" style="margin-left: 5%;">
+        My Services
+      </h1>
+      
+      <div class="service-flexes">
+        <div id="service-1" class="service-elements">
+          <h2 class="white-line"> &lt;/&gt; </h2>
+          <h6 class="white-line">Web Development</h6>
+          <p class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+        </div>
+        <div class="service-elements">
+          <i class="fa-brands fa-android fa-3x" style="color: #ffffff;"></i>
+          <h6 class="white-line">App Development</h6>
+          <p class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+        </div>
+        <div class="service-elements">
+          <i class="fa-solid fa-code-compare fa-2x" style="color: #ffffff;"></i>
+          <h6 class="white-line" style="margin-top: 5%;">Product Maintainance</h6>
+          <p class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+        
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MY PROJECTS -->
+  <div id="project" class="container">
+    <div style="margin-top: 4%;">
+      <h1 class="dark-heading" style="margin-left: 5%;">
+        My Projects
+      </h1>
+    </div>
+
+    <div id="project-flexes">
+      <div class="myProjectCard">
+        <div class="innerProjectCard">
+            <div class="frontSide">
+                <p class="title">FRONT SIDE</p>
+                <p>Hover Me</p>
+            </div>
+            <div class="backSide">
+                <p class="title">BACK SIDE</p>
+                <p>Leave Me</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="myProjectCard">
+        <div class="innerProjectCard">
+            <div class="frontSide">
+                <p class="title">Pet App</p>
+                <p style="margin: 1rem;">Using React Native, Java Spring boot, AWS auth and MySQL</p>
+            </div>
+            <div class="backSide">
+                <p class="title">BACK SIDE</p>
+                <p>Leave Me</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="myProjectCard">
+        <div class="innerProjectCard">
+            <div class="frontSide">
+                <p class="title">Porfolio</p>
+                <p style="margin: 1rem;">Using Angular Bootstrap and CSS</p>
+            </div>
+            <div class="backSide">
+                <p class="title">BACK SIDE</p>
+                <p>Leave Me</p>
+            </div>
+        </div>
+      </div>
+      
+      <!-- <div id="project-1" >
+        <h2 class="white-line"> &lt;/&gt; </h2>
+        <h6 class="white-line">Web Development</h6>
+        <p class="hide-on-hover" class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+        <p class="show-on-hover">Kushal Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eligendi esse consequuntur nobis quibusdam rerum quis consequatur eveniet officiis ab illo quisquam dolores nam ipsam dignissimos? A atque corporis tenetur. Kushal</p>
+      </div>
+      <div class="service-elements">
+        <h2 class="white-line"> App D Logo </h2>
+        <h6 class="white-line">App Development</h6>
+        <p class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+      </div>
+      <div class="service-elements">
+        <h2 class="white-line"> Product Maintainance Logo </h2>
+        <h6 class="white-line">Product Maintainance</h6>
+        <p class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+      
+      </div> -->
+    </div>
+
+  </div>
+
+  <!-- <div class="bg-dark">
+    <div class="container">
+      <div id="contact-section">
+        <div class="about">
+          <h1 class="white-heading">Contact Me</h1>
+
+          <div class="service-flexes">
+            <div id="service-1" class="service-elements">
+              <h2 class="white-line"> &lt;/&gt; </h2>
+              <h6 class="white-line">Web Development</h6>
+              <p class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+            </div>
+            <div class="service-elements">
+              <h2 class="white-line"> App D Logo </h2>
+              <h6 class="white-line">App Development</h6>
+              <p class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+            </div>
+            <div class="service-elements">
+              <h2 class="white-line"> Product Maintainance Logo </h2>
+              <h6 class="white-line">Product Maintainance</h6>
+              <p class="white-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nobis repellendus animi dolore, aliquam omnis nesciunt harum eos magni! Repudiandae eius delectus ducimus ipsa, maiores expedita non esse veniam ab!</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- CONTACT -->
+  <div id="contact" class="bg-dark">
+    <div class="container">
+      <div id="contact-section">
+        <h1 class="white-heading">
+          Contact Me
+        </h1>
+
+        <i class="fa-solid fa-envelope contact-icons"></i>
+        <span class="white-contact-heading">kushalkhanna5@gmail.com</span> <br>
+
+        <i class="fa-solid fa-phone contact-icons"></i>
+        <span class="white-contact-heading">8368423023</span> <br>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="ul-social">
+              <li class="li-social"><i class="fa-brands fa-facebook social-icons" (click)="facebookClick()"></i></li>
+              <li class="li-social"><i class="fa-brands fa-linkedin social-icons" (click)="linkedInClick()"></i></li>
+              <li class="li-social"><i class="fa-brands fa-github social-icons" (click)="githubClick()"></i></li>
+            </ul>
+          </div>
+          <div style="margin-left: 1rem;">
+            <button id="resume-button" (click)="downloadResume()">
+              <span id="resume-button-content">Download Resume</span>
+            </button>
+        </div>
+        </div>
+      </div>
+
+      <!-- <button class="button">
+        <span class="button-content">Download </span>
+      </button> -->
+
+      <div id="contact-form">
+        <div class="row">
+          <input class="contact-input" type="text" placeholder="Enter your Name">
+          <input class="contact-input" type="text" placeholder="Enter your Email">
+          <textarea class="contact-input" placeholder="Enter your Feedback" style="height: 5rem"></textarea>
+          
+          <button id="contact-button">
+            Submit Response
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
